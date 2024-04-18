@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Color Changer</title>
+</head>
+<body>
+<h1>Background Color Changer</h1>
+<form id="color">
+    <label for="colorInput">Enter a color:</label>
+    <input type="text" id="colorInput" name="colorInput" placeholder="Enter a color name ">
+    <input type="submit" value="Change Color">
+</form>
+
+<script>
+    document.getElementById('color').addEventListener('submit', function(event)
+     {
+        event.preventDefault();
+        const colorInput = document.getElementById('colorInput').value;
+        document.body.style.backgroundColor = colorInput;
+    
+});
+</script>
+
+</body>
+</html>
+
